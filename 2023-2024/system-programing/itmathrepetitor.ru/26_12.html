@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+    <style>
+        body { 
+            padding: 0; margin: 0; border: 0; 
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+
+            font-size: 1.4rem;
+        }
+
+        .wrapper {
+            margin: 30px auto;
+            padding-left: 20px;
+            width: 70vw;
+        }
+
+        .code {
+            background: linear-gradient(to bottom, white -100%, black 100%);
+            border-radius: 4px;
+            color: white;
+            padding: 0.2em;
+        }
+
+        .row {
+            overflow: auto;
+            max-width: 90vw;
+            padding: 0.8em;
+            margin-right: 30px;
+        }
+
+        h1, h2 {
+            display: inline;
+            font-weight: normal;
+            color: rgb(173, 33, 23);
+        }
+        h4 {
+            font-weight: normal;
+            font-style: oblique;
+            color: rgb(90, 93, 95)
+        }
+        hr {
+            display: inline-block;
+            width: 400px;
+        }
+
+        .link {
+            color: rgb(90, 93, 95)
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>The Path to Enlightenment</h1><hr>
+        <h4>These instructions are for *nix platforms. We also have <a class="link" href="" target="_blank">Windows instructions</a>.</h4>
+        <p>You can run the tests by calling the path.to.enlightenment.rb file</p>
+        <p>In your terminal, while in the ruby, koans directory, type:</p>
+        <p class="code row">[ ruby_koans ] $ ruby path_to_enlightement.rb</p>
+
+        <h2>Red, Green, Refactor</h2>
+        <p>In test-driven development (TDD) the mantra has always benn red: write a failing test and run it: green: make the test pass, and refactor: look at the code and see if you can make it even better</p>
+    </div>
+</body>
+</html>
