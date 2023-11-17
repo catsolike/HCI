@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            padding: 1em; margin: 0; border: 0; 
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+
+            font-size: 1.4rem;
+            font-family: Roboto;
+            font-weight: bold;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .left {
+            width: 30vw;
+       }
+
+       .left h5 {
+            color: #393b3c;
+       }
+       .left p {
+            color: red;
+       }
+
+       .right {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+            width: max-content;
+            padding: 0.2em 1em;
+            text-align: center;
+            
+            border: red dotted 2px;
+            border-radius: 8px;
+            
+       }
+
+        .right p {
+            color: #393b3c;
+        }
+        .right h1 {
+            margin: 0;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <h5>Распродажа стайлеров</h5>
+            <p>🕔Действует до 06 декабря</p>
+        </div>
+        <div class="right">
+            <p>Скидки до</p>
+            <h1>12%</h1>
+        </div>
+    </div>
+</body>
+</html>

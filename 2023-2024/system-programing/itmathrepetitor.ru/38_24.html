@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            padding: 0; margin: 0; border: 0; 
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background: #bebebe;
+            font-size: 1.4rem;
+
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .rect {
+            rotate: 45deg;
+            border-radius: 8px;
+        }
+        
+        .rect_1 {
+            margin-right: 80px;
+            width: 160px;
+            height: 160px;
+            background: blue;
+        }
+        .rect_2 {
+            margin-right: 60px;
+            width: 120px;
+            height: 120px;
+            background: rgb(0, 128, 0);
+        }
+        .rect_3 {
+            width: 80px;
+            height: 80px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="rect rect_1"></div>
+        <div class="rect rect_2"></div>
+        <div class="rect rect_3"></div>
+    </div>
+</body>
+</html>

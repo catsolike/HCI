@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            padding: 0; margin: 0; border: 0; 
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background: repeat url(img/32_18_1.png);
+            font-size: 1.4rem;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-items: center;
+        }
+
+        .column {
+            width: 100%;
+            display: grid;
+
+        }
+
+        .column1 {
+            background: repeat url(img/32_18_2.png);
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .column2 {
+            background: repeat url(img/32_18_3.png);
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .vert {
+            color: black;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            align-self: center;
+            justify-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>header</h1>
+    <div class="columns">
+        <aside class="column column1"><h1 class="vert">sidebar</h1></aside>
+        <main class="column column2"><h1 class="vert">content</h1></main>
+    </div>
+    <h1>footer</h1>
+</body>
+</html>

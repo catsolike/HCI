@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            padding: 0; margin: 0; border: 0; 
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background: rgb(77, 208, 226);
+            font-size: 1.4rem;
+
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .rect {
+            display: inline-block;
+            background: white;
+            height: 150px;
+            width: 150px;
+        }
+
+        .rect1 {
+            grid-row: 1;
+        }
+        
+        .rect2 {
+            grid-row: 1;
+        }
+        
+        .rect3 {
+            grid-row: 1;
+        }
+        
+        .rect4 {
+            grid-row: 2;
+        }
+        
+        .rect5 {
+            grid-row: 2;
+        }
+        
+        .rect6 {
+            grid-row: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="rect rect1"></div>
+        <div class="rect rect2"></div>
+        <div class="rect rect3"></div>
+        <div class="rect rect4"></div>
+        <div class="rect rect5"></div>
+        <div class="rect rect5"></div>
+    </div>
+</body>
+</html>

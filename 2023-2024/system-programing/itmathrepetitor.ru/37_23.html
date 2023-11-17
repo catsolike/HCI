@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            padding: 0; margin: 0; border: 0; 
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background: #bebebe;
+            font-size: 1.4rem;
+
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .triangle_up {
+            border: 5em solid transparent;
+            border-top: 0;
+            border-bottom: 4em solid rgb(0, 100, 0);
+        }
+        .triangle_down {
+            border: 5em solid transparent;
+            border-bottom: 0;
+            border-top: 12em solid rgb(0, 100, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="triangle_up"></div>
+        <div class="triangle_down"></div>
+        <div class="triangle_up"></div>
+    </div>
+</body>
+</html>
