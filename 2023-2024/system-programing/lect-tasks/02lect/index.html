@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Лекция</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            .table_output {
+                border: 2px solid black;
+
+            }
+            td {
+                padding: 0.5em 1em;
+                text-align: center;
+                border: 1px solid black;
+            }
+
+            .td_between {
+                border: 0;
+            }
+        </style>
+	</head>
+	<body>
+        
+        <img src="img.png" alt="" usemap="#map1">
+        <map name="map1">
+            <area shape="rect" coords="0, 0, 400, 40" href="push.html" alt="">
+            <area shape="rect" coords="0, 40, 130, 200" href="lerm.html" alt="">
+            <area shape="circle" coords="180, 105, 85" href="block.html" alt="">
+        </map>
+        
+        <table>
+            <tr>
+                <td class="td_between">                    
+                    <table class="table_output">
+                        <tr><td rowspan="2">1</td><td colspan="2">2</td></tr>
+                        <tr><td>5</td><td>6</td></tr>
+                    </table>
+                </td>
+                <td class="td_between">
+                    <table class="table_output">
+                        <tr><td colspan="2">1</td></tr>
+                        <tr>
+                            <td rowspan="3">3</td>
+                        </tr>
+                        <tr><td>4</td></tr>
+                        <tr><td>6</td></tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td_between">                    
+                    <table class="table_output">
+                        <tr><td>1</td><td rowspan="2">2</td></tr>
+                        <tr><td>3</td></tr>
+                        <tr><td colspan="2">5</td></tr>
+                    </table>
+                </td>
+
+                <td class="td_between">
+                    <table class="table_output">
+                        <tr><td colspan="2">1</td></tr>
+                        <tr><td>3</td><td>4</td></tr>
+                        <tr><td colspan="2">5</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+	</body>
+</html>
